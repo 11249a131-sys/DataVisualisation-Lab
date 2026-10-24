@@ -1,0 +1,101 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMA8XXlZ77NpYB6wXv02g9q",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/11249a125-harish/Data_Visualization_LAB/blob/main/EXP5/ConnectingToData_And_DataPreparation.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "\n",
+        "# Load dataset\n",
+        "data = pd.read_csv(\"sales_data.csv\", header=None, skiprows=1)\n",
+        "\n",
+        "# Set column names\n",
+        "data.columns = [\"OrderID\", \"Product\", \"Category\", \"Sales\", \"Quantity\", \"Region\"]\n",
+        "\n",
+        "# Display first five rows\n",
+        "print(\"First five rows:\")\n",
+        "print(data.head())\n",
+        "\n",
+        "# Check missing values\n",
+        "print(\"\\nMissing values:\")\n",
+        "print(data.isnull().sum())\n",
+        "\n",
+        "# Remove duplicate records\n",
+        "data = data.drop_duplicates()\n",
+        "\n",
+        "# Convert Sales column to numeric\n",
+        "data[\"Sales\"] = pd.to_numeric(data[\"Sales\"], errors=\"coerce\")\n",
+        "\n",
+        "# Remove rows with missing Sales values, if any\n",
+        "data = data.dropna(subset=[\"Sales\"])\n",
+        "\n",
+        "# Save cleaned dataset\n",
+        "data.to_csv(\"cleaned_sales_data.csv\", index=False)\n",
+        "\n",
+        "# Display success message\n",
+        "print(\"\\nData prepared successfully.\")\n",
+        "print(\"Cleaned dataset saved as cleaned_sales_data.csv\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CcxuPnRUnte3",
+        "outputId": "740c9fd3-a472-4da1-e65e-5cfe839bf930"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "First five rows:\n",
+            "   OrderID  Product     Category  Sales  Quantity  Region\n",
+            "0  OrderID  Product     Category  Sales  Quantity  Region\n",
+            "1      101   Laptop  Electronics  55000         2   South\n",
+            "2      102   Mobile  Electronics  20000         3   North\n",
+            "3      103    Chair    Furniture   5000         5    West\n",
+            "4      104    Table    Furniture   7000         2    East\n",
+            "\n",
+            "Missing values:\n",
+            "OrderID     0\n",
+            "Product     0\n",
+            "Category    0\n",
+            "Sales       0\n",
+            "Quantity    0\n",
+            "Region      0\n",
+            "dtype: int64\n",
+            "\n",
+            "Data prepared successfully.\n",
+            "Cleaned dataset saved as cleaned_sales_data.csv\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
