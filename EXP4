@@ -1,0 +1,111 @@
+EXPERIMENT NO. 4 Introduction to Tableau and Installation
+
+AIM:
+To study Tableau, its features, and interface, and install Tableau Public.
+
+INTRODUCTION TO TABLEAU:
+Tableau is a data visualization tool used to represent data using charts, graphs, maps, and dashboards. It helps users understand data easily and identify patterns and trends.
+
+OBJECTIVES:
+1. To understand data easily.
+2. To identify trends and patterns.
+3. To create charts and graphs.
+4. To compare data.
+5. To create interactive dashboards.
+
+TABLEAU PRODUCTS:
+1. Tableau Desktop – Used to create visualizations.
+2. Tableau Public – Used to create and share visualizations publicly.
+3. Tableau Server – Used to share visualizations within organizations.
+4. Tableau Cloud – Used to share visualizations online.
+5. Tableau Prep – Used to clean and prepare data.
+
+FEATURES OF TABLEAU:
+1. Easy drag-and-drop interface.
+2. Connects to different data sources.
+3. Creates charts, graphs, and maps.
+4. Provides interactive filters.
+5. Creates dashboards and stories.
+6. Helps identify trends and patterns.
+
+TABLEAU DATA CONCEPTS:
+
+1. Dimensions: Descriptive data such as Product, Region, and Category.
+2. Measures: Numerical data such as Sales, Profit, and Quantity.
+3. Discrete Fields: Display separate categories.
+4. Continuous Fields: Display values along a continuous range.
+5. Data Types: Include text, numbers, dates, and Boolean values.
+
+TABLEAU INTERFACE:
+1. Data Pane – Displays available data fields.
+2. Rows Shelf – Organizes data in rows.
+3. Columns Shelf – Organizes data in columns.
+4. Marks Card – Controls color, size, and labels.
+5. Filters Shelf – Filters the required data.
+6. Show Me – Suggests suitable chart types.
+7. Worksheet – Creates individual charts.
+8. Dashboard – Combines multiple charts.
+9. Story – Presents visualizations in a sequence.
+
+TABLEAU DATA SOURCES:
+Tableau can connect to:
+1. Excel files.
+2. CSV files.
+3. Text files.
+4. Databases.
+5. Cloud data sources.
+
+TYPES OF VISUALIZATIONS:
+1. Bar Chart – Compares values.
+2. Line Chart – Shows trends over time.
+3. Pie Chart – Shows proportions.
+4. Scatter Plot – Shows relationships between values.
+5. Maps – Display geographical data.
+6. Heat Map – Shows high and low values using colors.
+7. Treemap – Displays data using rectangles.
+8. Histogram – Shows data distribution.
+
+FILTERS AND INTERACTIVITY:
+Filters help display selected data. Tooltips show additional information when the user moves the pointer over a chart. These features make Tableau visualizations interactive.
+
+CALCULATED FIELDS:
+Calculated fields create new values using existing data. For example, they can calculate profit ratios and growth percentages.
+
+ALGORITHM:
+1. Open a web browser.
+2. Visit the official Tableau Public website.
+3. Download Tableau Public.
+4. Install the software.
+5. Open Tableau Public.
+6. Explore the interface.
+7. Verify that the home screen appears.
+
+INSTALLATION STEPS:
+1. Open a web browser.
+2. Visit the Tableau Public website.
+3. Download the installer.
+4. Run the installer.
+5. Follow the installation instructions.
+6. Open Tableau Public after installation.
+
+PRACTICAL PROGRAM:
+No programming code is required because Tableau uses a graphical interface.
+
+INTERFACE OPERATIONS:
+1. Connect – Connects to a data source.
+2. Open – Opens an existing workbook.
+3. Worksheet – Creates a chart.
+4. Dashboard – Combines charts.
+5. Story – Presents charts in sequence.
+6. Filters – Displays selected data.
+7. Marks Card – Changes the appearance of charts.
+
+SAMPLE OUTPUT:
+1. Tableau Public was downloaded successfully.
+2. Installation was completed.
+3. Tableau Public opened successfully.
+4. The home screen was displayed.
+5. The workspace was ready for visualization.
+
+RESULT:
+Thus, Tableau Public was installed successfully, and its features, interface, data concepts, and visualization types were studied.
