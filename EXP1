@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMXOpRHmDt93ulnjtVhawOY",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/11249a125-harish/Data_Visualization_LAB/blob/main/EXP1/Exp_1_Output.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1Yze__NKpzXg",
+        "outputId": "24534387-a410-4f77-c5eb-ec52d2da9756"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Matplotlib: 3.10.0\n",
+            "Seaborn: 0.13.2\n",
+            "Plotly: 5.24.1\n",
+            "Pandas: 2.2.3\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Program\n",
+        "import matplotlib\n",
+        "import seaborn\n",
+        "import plotly\n",
+        "import pandas\n",
+        "\n",
+        "print(\"Matplotlib:\", matplotlib.__version__)\n",
+        "print(\"Seaborn:\", seaborn.__version__)\n",
+        "print(\"Plotly:\", plotly.__version__)\n",
+        "print(\"Pandas:\", pandas.__version__)"
+      ]
+    }
+  ]
+}
