@@ -1,0 +1,82 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNypfpAi3gTTBXC2gIomYJ9",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/11249a125-harish/Data_Visualization_LAB/blob/main/EXP6/DataAggregation.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Kn9ebqNNhb9n",
+        "outputId": "a801b142-15e2-4495-f0b9-fa5c5361b4fd"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Total Sales: 30500\n",
+            "Average Sales: 3812.5\n",
+            "Minimum Sales: 2000\n",
+            "Maximum Sales: 6000\n",
+            "\n",
+            "Sales by Category:\n",
+            "Category\n",
+            "Clothing        4500\n",
+            "Electronics    14500\n",
+            "Furniture      11500\n",
+            "Name: Sales, dtype: int64\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "import pandas as pd\n",
+        "# Load dataset\n",
+        "data = pd.read_csv(\"sales_data.csv\")\n",
+        "\n",
+        "# Total Sales\n",
+        "print(\"Total Sales:\", data[\"Sales\"].sum())\n",
+        "\n",
+        "# Average Sales\n",
+        "print(\"Average Sales:\", data[\"Sales\"].mean())\n",
+        "\n",
+        "# Minimum Sales\n",
+        "print(\"Minimum Sales:\", data[\"Sales\"].min())\n",
+        "\n",
+        "# Maximum Sales\n",
+        "print(\"Maximum Sales:\", data[\"Sales\"].max())\n",
+        "\n",
+        "# Group by Category\n",
+        "print(\"\\nSales by Category:\")\n",
+        "print(data.groupby(\"Category\")[\"Sales\"].sum())\n"
+      ]
+    }
+  ]
+}
